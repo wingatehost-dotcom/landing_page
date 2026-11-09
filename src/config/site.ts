@@ -15,7 +15,12 @@ export type NavItem = {
   readonly path: string;
 };
 
-export type SocialIconName = "facebook" | "instagram" | "linkedin" | "youtube";
+export type SocialIconName =
+  | "facebook"
+  | "instagram"
+  | "linkedin"
+  | "youtube"
+  | "telegram";
 
 export type SocialLink = {
   readonly name: string;
@@ -49,19 +54,22 @@ export const siteConfig = {
   description:
     "{{name}} provides furniture, construction, machinery, electrical services, feed, soap, bakery and more, plus job-oriented training and consultancy. Quality at a fair price.",
 
-  phone: "0984000075",
-  phoneDisplay: "0984 000 075",
+  phone: "0939070767",
+  phoneDisplay: "0939 070 767",
   /** Public inbox address. */
   email: "wingatecollegeplc@gmail.com",
-  /** [CONFIRM] physical address. Leave empty to show the map placeholder. */
-  address: "",
-  /** [CONFIRM] office hours. */
-  workingHours: "",
+  /** Confirmed physical address. */
+  address: "General Wingate Polytechnic College, Addis Ababa, Ethiopia",
+  /** Confirmed office hours. */
+  workingHours: "8:30 AM – 5:00 PM",
   /** [CONFIRM] production domain, used for sitemap, canonical and OG URLs. */
   domain: "https://example.com",
-  /** [CONFIRM] paste an OpenStreetMap embed URL once the address is known. */
-  mapEmbedUrl: "",
-  addressConfirmed: false,
+  /** Google Maps share link for the college location. */
+  mapLink: "https://maps.app.goo.gl/vNzePci8NGqAQcPR9",
+  /** OpenStreetMap embed for the same location (works without an API key). */
+  mapEmbedUrl:
+    "https://www.openstreetmap.org/export/embed.html?bbox=38.7045%2C9.0442%2C38.7245%2C9.0642&layer=mapnik&marker=9.0542158%2C38.7145377",
+  addressConfirmed: true,
 
   logo: images.logo,
   ogImage: images.ogImage,
@@ -82,6 +90,7 @@ export const siteConfig = {
 
   /** [CONFIRM] social profiles — fill `href` to activate the icons. */
   socials: [
+    { name: "Telegram", href: "https://t.me/wingatePLC", icon: "telegram" },
     { name: "Facebook", href: "", icon: "facebook" },
     { name: "Instagram", href: "", icon: "instagram" },
     { name: "LinkedIn", href: "", icon: "linkedin" },

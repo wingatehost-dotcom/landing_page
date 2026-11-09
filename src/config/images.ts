@@ -87,10 +87,6 @@ export const images = {
           "/images/divisions/furniture-1.jpg",
           "Wooden double doors with decorative carved panels",
         ),
-        card(
-          "/images/divisions/furniture-2.jpg",
-          "Close-up of the carved wooden door panels",
-        ),
       ],
     },
     parquet: {
@@ -102,10 +98,6 @@ export const images = {
         card(
           "/images/divisions/parquet-1.jpg",
           "Wooden parquet flooring in a herringbone pattern",
-        ),
-        card(
-          "/images/divisions/parquet-2.jpg",
-          "Close-up of wooden parquet floor boards",
         ),
       ],
     },
@@ -119,10 +111,6 @@ export const images = {
           "/images/divisions/construction-1.jpg",
           "Building under construction at the college site",
         ),
-        card(
-          "/images/divisions/construction-2.jpg",
-          "Scaffolding and construction work on a new building",
-        ),
       ],
     },
     machinery: {
@@ -134,10 +122,6 @@ export const images = {
         card(
           "/images/divisions/machinery-1.jpg",
           "Technician working on machinery in the workshop",
-        ),
-        card(
-          "/images/divisions/machinery-2.jpg",
-          "Close-up of machinery fabrication work",
         ),
       ],
     },
@@ -151,10 +135,6 @@ export const images = {
           "/images/divisions/electrical-1.jpg",
           "Electrical wiring and panel installation",
         ),
-        card(
-          "/images/divisions/electrical-2.jpg",
-          "Technician testing electrical components",
-        ),
       ],
     },
     poultry: {
@@ -167,10 +147,6 @@ export const images = {
           "/images/metalwork/poultry-cages.jpg",
           "Metal poultry cages on display at the college",
         ),
-        card(
-          "/images/divisions/poultry-1.jpg",
-          "Poultry cages at the college farm",
-        ),
       ],
     },
     soap: {
@@ -180,16 +156,8 @@ export const images = {
       ),
       gallery: [
         photo(
-          "/images/soap/soap-presenter-1.jpg",
-          "A staff member presenting soap and sanitary products at the college exhibition",
-        ),
-        photo(
           "/images/soap/soap-display-1.jpg",
           "Soap, sanitary and cleaning products on display at the college exhibition",
-        ),
-        photo(
-          "/images/soap/soap-display-2.jpg",
-          "Soap and cleaning products arranged for display at the college exhibition",
         ),
       ],
     },
@@ -204,24 +172,8 @@ export const images = {
           "Bakery and pastry products on display at the college exhibition",
         ),
         photo(
-          "/images/bakery/bakery-display-2.jpg",
-          "Cakes and pastries prepared for the college exhibition",
-        ),
-        photo(
-          "/images/bakery/bakery-display-3.jpg",
-          "Visitors viewing bakery and pastry products at the college exhibition",
-        ),
-        photo(
-          "/images/bakery/bakery-display-4.jpg",
-          "Visitors at the college bakery and pastry display",
-        ),
-        photo(
           "/images/bakery/exhibition-students-1.jpg",
           "Students presenting bakery products at the college exhibition",
-        ),
-        photo(
-          "/images/bakery/exhibition-students-2.jpg",
-          "Students standing behind a display of products at the college exhibition",
         ),
       ],
     },
@@ -236,10 +188,6 @@ export const images = {
         card(
           "/images/divisions/textile-1.jpg",
           "Rows of colourful fabric swatches arranged for a textile display",
-        ),
-        card(
-          "/images/divisions/textile-2.jpg",
-          "Close-up of woven fabric swatches in bright colours",
         ),
       ],
     },

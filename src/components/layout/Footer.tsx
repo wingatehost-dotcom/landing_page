@@ -135,11 +135,18 @@ export function Footer({ lang, content, divisions }: FooterProps) {
                   <span>{siteConfig.email}</span>
                 </a>
               </li>
-              <li className="flex items-start gap-3">
-                <MapPin aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-third" />
-                <span>
-                  {siteConfig.address || content.contact.addressPending}
-                </span>
+              <li>
+                <a
+                  href={siteConfig.mapLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 transition-colors hover:text-third"
+                >
+                  <MapPin aria-hidden className="mt-0.5 h-4 w-4 shrink-0 text-third" />
+                  <span>
+                    {siteConfig.address || content.contact.addressPending}
+                  </span>
+                </a>
               </li>
               {siteConfig.workingHours ? (
                 <li className="pl-7">{siteConfig.workingHours}</li>

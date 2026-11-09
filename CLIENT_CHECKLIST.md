@@ -17,12 +17,12 @@ Everything below is still needed from the client before launch. Items marked **[
 
 - [x] **Public email address.** `wingatecollegeplc@gmail.com` is set in `src/config/site.ts` → `siteConfig.email` for the footer, contact page and mailto fallback.
 - [x] **Contact-form inbox.** Form submissions are delivered to `wingatehost@gmail.com` through FormSubmit.co. This address is not displayed anywhere on the site.
-- [ ] **[CONFIRM] Physical address.** Currently empty (`siteConfig.address`) so the contact page shows “Address to be confirmed.”
-- [ ] **[CONFIRM] Working hours.** Currently empty (`siteConfig.workingHours`) so the contact page shows “Working hours to be confirmed.”
-- [ ] **[CONFIRM] Map location.** Provide the address or a Google/OpenStreetMap place link. Paste an OpenStreetMap embed URL into `siteConfig.mapEmbedUrl`; until then the map panel shows a placeholder.
-- [ ] **Phone confirmation.** The site publishes `0984 000 075` (`siteConfig.phone` / `phoneDisplay`). Confirm it is the public number and whether a second/landline number should be added.
+- [x] **Physical address.** `siteConfig.address` is set to “General Wingate Polytechnic College, Addis Ababa, Ethiopia” and links to the Google Maps location.
+- [x] **Working hours.** `siteConfig.workingHours` is set to “8:30 AM – 5:00 PM”.
+- [x] **Map location.** Google Maps share link stored in `siteConfig.mapLink`; an OpenStreetMap embed is set in `siteConfig.mapEmbedUrl`.
+- [x] **Phone confirmation.** The site publishes `0939 070 767` (`siteConfig.phone` / `phoneDisplay`).
 - [ ] **Production domain.** Currently `https://example.com` (`siteConfig.domain`). Required for canonical URLs, Open Graph, sitemap and JSON-LD.
-- [ ] **WhatsApp / Telegram.** Optional; supply numbers or links if they should appear.
+- [x] **Telegram.** `@wingatePLC` is linked as `https://t.me/wingatePLC` in `siteConfig.socials`.
 
 ## 3. Content approval
 
@@ -78,11 +78,12 @@ Files to update: `src/content/am.ts` and the `am` fields in `src/content/divisio
 
 Social URLs are intentionally empty, so the icons render as disabled “link to be confirmed” chips in the footer and contact page.
 
+- [x] Telegram: `https://t.me/wingatePLC` (`@wingatePLC`)
 - [ ] Facebook page URL
 - [ ] Instagram profile URL
 - [ ] LinkedIn company page URL
 - [ ] YouTube channel URL
-- [ ] Any other platform (TikTok, Telegram, X) — the icon set currently supports Facebook, Instagram, LinkedIn and YouTube.
+- [ ] Any other platform (TikTok, X) — the icon set currently supports Facebook, Instagram, LinkedIn, YouTube and Telegram.
 
 Update `siteConfig.socials` in `src/config/site.ts`.
 
@@ -120,7 +121,9 @@ Update `siteConfig.socials` in `src/config/site.ts`.
 ## Already confirmed / live
 
 - Company name in a single constant: `src/config/site.ts` → `siteConfig.name`
-- Phone: `0984 000 075`
+- Phone: `0939 070 767`
+- Address, Google Maps link, map embed and working hours confirmed
+- Telegram: `@wingatePLC`
 - Nine divisions with approved copy from `Wingate_Website_Content.docx`
 - Vision, mission, values, who-we-serve, why-choose-us and FAQ copy
 - English site complete; static export builds with zero errors
@@ -128,4 +131,4 @@ Update `siteConfig.socials` in `src/config/site.ts`.
 - Custom 404, sitemap, robots, canonical URLs, Open Graph and Organization JSON-LD
 - `.htaccess` for clean URLs, 404 fallback, caching and compression
 
-**Launch blocker summary:** FormSubmit activation, physical address / map, production domain, native-speaker review of the Amharic translation, and a decision on publishing statistics.
+**Launch blocker summary:** FormSubmit activation, production domain, native-speaker review of the Amharic translation, and a decision on publishing statistics.

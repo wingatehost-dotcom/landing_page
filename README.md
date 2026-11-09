@@ -299,10 +299,10 @@ See **`CLIENT_CHECKLIST.md`** for the full list of client inputs. Key implementa
 - No `public/logo/` existed at the start; the supplied crest (`../images/Wingate College Crest Emblem.png`) is used for the logo, favicon and OG image.
 - Real client photos are used for bakery, soap, metalwork, furniture, parquet, construction, machinery, electrical, poultry and textile.
 - Amharic content is a complete working translation in `src/content/am.ts` and the `am` fields of `src/content/divisions.ts`; it should be reviewed by a native speaker before launch.
-- Social profile URLs are empty, so icons render as disabled “link to be confirmed” chips.
-- Address, map embed, working hours and production domain are placeholders until confirmed.
+- Telegram (`@wingatePLC`) is live; the other social profile URLs are empty, so those icons render as disabled “link to be confirmed” chips.
+- Address, Google Maps link, map embed and working hours are confirmed in `src/config/site.ts`; the production domain remains a placeholder.
 - Statistics, team and partner sections are hidden by default because no verified data was supplied.
-- Phone `0984 000 075` was supplied in the requirements form and is live.
+- Phone `0939 070 767` is live.
 - Brand icons are inline SVGs because current `lucide-react` no longer exports brand icons.
 - The root `/` page renders the English home page directly using the shared `HomeContent` and `SiteShell` components; language switching is available in the header. No redirect or language-chooser page is used.
 

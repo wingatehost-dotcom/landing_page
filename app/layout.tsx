@@ -87,8 +87,11 @@ const organizationJsonLd = {
   email: siteConfig.email,
   address: {
     "@type": "PostalAddress",
+    streetAddress: "General Wingate Polytechnic College",
+    addressLocality: "Addis Ababa",
     addressCountry: "ET",
   },
+  hasMap: siteConfig.mapLink,
   sameAs: siteConfig.socials
     .map((social) => social.href)
     .filter((href) => href.length > 0),

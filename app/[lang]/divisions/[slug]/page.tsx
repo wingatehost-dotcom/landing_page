@@ -59,14 +59,15 @@ export default async function DivisionPage({ params }: DivisionPageProps) {
   const contactHref = `${localePath(lang, "/contact/")}?division=${division.slug}`;
 
   /**
-   * Division pages currently show a single gallery image, using the detail
-   * shot rather than repeating the hero. Soap and bakery keep their full
-   * galleries because they have a larger set of confirmed photos.
+   * Non-soap/bakery divisions have a single confirmed photo, which is already
+   * used in the page hero. Showing it again in a gallery would duplicate it,
+   * so the gallery section only appears for soap and bakery, which have
+   * additional distinct photos.
    */
   const galleryImages =
     division.slug === "soap" || division.slug === "bakery"
       ? division.gallery
-      : division.gallery.slice(-1);
+      : [];
 
   const allDivisions = getDivisions(lang);
   const currentIndex = allDivisions.findIndex((item) => item.slug === division.slug);
@@ -140,38 +141,40 @@ export default async function DivisionPage({ params }: DivisionPageProps) {
         </Container>
       </Section>
 
-      <Section tone="fourth">
-        <Container>
-          <SectionHeading title={divisionPage.galleryTitle} />
-          <div
-            className={
-              galleryImages.length > 1
-                ? "mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
-                : "mx-auto mt-10 max-w-3xl"
-            }
-          >
-            {galleryImages.map((image, index) => (
-              <div
-                key={`${image.src}-${index}`}
-                className="relative aspect-[4/3] overflow-hidden rounded-xl border border-primary/10 bg-primary/5"
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  fill
-                  sizes={
-                    galleryImages.length > 1
-                      ? "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-                      : "(min-width: 768px) 768px, 100vw"
-                  }
-                  loading="lazy"
-                  className="object-cover"
-                />
-              </div>
-            ))}
-          </div>
-        </Container>
-      </Section>
+      {galleryImages.length > 0 ? (
+        <Section tone="fourth">
+          <Container>
+            <SectionHeading title={divisionPage.galleryTitle} />
+            <div
+              className={
+                galleryImages.length > 1
+                  ? "mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+                  : "mx-auto mt-10 max-w-3xl"
+              }
+            >
+              {galleryImages.map((image, index) => (
+                <div
+                  key={`${image.src}-${index}`}
+                  className="relative aspect-[4/3] overflow-hidden rounded-xl border border-primary/10 bg-primary/5"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    fill
+                    sizes={
+                      galleryImages.length > 1
+                        ? "(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                        : "(min-width: 768px) 768px, 100vw"
+                    }
+                    loading="lazy"
+                    className="object-cover"
+                  />
+                </div>
+              ))}
+            </div>
+          </Container>
+        </Section>
+      ) : null}
 
       <Section tone="primary" className="relative overflow-hidden">
         <div aria-hidden className="surface-grid absolute inset-0 opacity-10" />

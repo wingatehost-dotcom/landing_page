@@ -116,7 +116,14 @@ export default async function ContactPage({ params }: ContactPageProps) {
                       {content.common.address}
                     </span>
                     <span className="mt-1 block text-sm leading-relaxed text-primary/75">
-                      {siteConfig.address || contact.addressPending}
+                      <a
+                        href={siteConfig.mapLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline-offset-4 transition-colors hover:text-secondary hover:underline"
+                      >
+                        {siteConfig.address || contact.addressPending}
+                      </a>
                     </span>
                   </span>
                 </li>
