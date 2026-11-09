@@ -85,8 +85,8 @@ export const am: Content = {
     "close": "ዝጋ",
     "viewImage": "ምስል ይመልከቱ",
     "imageCounter": "ምስል {{current}} ከ{{total}}",
-    "optional": "አማራጭ",
-    "requiredFields": "* የተምረባቸው መስኮች ያስፈልጋሉ።",
+    "optional": "የግድ መሞላት የሌለበት",
+    "requiredFields": "* ምልክት የተደረገባቸው ቦታዎች የግድ መሞላት አለባቸው",
     "draftFigures": "ጊዜያዊ ቁጥሮች — በደንበኛው እስኪረጋገጡ ድረስ።"
   },
   "home": {
@@ -386,7 +386,7 @@ export const am: Content = {
     "hero": {
       "eyebrow": "ያግኙን",
       "title": "ያግኙን",
-      "subtitle": "ምርቶችን ለማዘዝ፣ አገልግሎት ለመጠየቅ፣ ስለ ግንባታ ፕሮጀክት ለመወያየት ወይም ስለ ስልጠናና ምክር ለማወቅ ቢፈልጉ እንደደስ ይሰማናል።"
+      "subtitle": "ምርቶችን ለማዘዝ፣ አገልግሎት ለመጠየቅ፣ ስለ ግንባታ ፕሮጀክት ለመወያየት ወይም ስለ ስልጠናና ምክር ለማወቅ ቢፈልጉ ያናግሩን።"
     },
     "intro": "መልእክት ይላኩልን፤ በተቻለ ፍጥነት እንመልስልዎታለን።",
     "detailsTitle": "የመገኛ ዝርዝሮች",
