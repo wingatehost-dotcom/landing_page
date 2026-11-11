@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     "egg production",
     "soap manufacturing",
     "bakery",
-    "textile and garment",
+    "textile and garment training",
     "electrical and electronic maintenance",
     "technical training",
     "consultancy",

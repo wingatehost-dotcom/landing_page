@@ -66,6 +66,7 @@ export type ResolvedDivision = {
   readonly shortDescription: string;
   readonly fullDescription: string;
   readonly products: readonly string[];
+  readonly productsTitle: string;
   readonly hero: ImageAsset;
   readonly gallery: readonly ImageAsset[];
 };
@@ -77,6 +78,9 @@ export function resolveDivision(division: Division, lang: Locale): ResolvedDivis
     shortDescription: localized(division.shortDescription, lang),
     fullDescription: localized(division.fullDescription, lang),
     products: localizedList(division.products, lang),
+    productsTitle: division.productsTitle
+      ? localized(division.productsTitle, lang)
+      : "",
     hero: division.hero,
     gallery: division.gallery,
   };

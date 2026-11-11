@@ -21,12 +21,12 @@ export const en: Content = {
     services: {
       title: "Services and Programs | {{name}}",
       description:
-        "Explore {{name}} products, technical services and training programs across manufacturing, construction, electrical work, food production, textiles, research and consultancy.",
+        "Explore {{name}} products, technical services and training programs across manufacturing, construction, electrical work, food production, garment training, research and consultancy.",
     },
     divisions: {
       title: "Our Divisions | {{name}}",
       description:
-        "Explore our divisions: furniture, parquet flooring, construction, machinery, electrical services, poultry and feed, soap and cosmetics, bakery, and textiles.",
+        "Explore our divisions: furniture, parquet flooring, construction, machinery, electrical services, poultry and feed, soap and cosmetics, bakery, and textile and garment training.",
     },
     training: {
       title:
@@ -158,9 +158,9 @@ export const en: Content = {
         },
         {
           division: "textile",
-          title: "Textile and Garment",
+          title: "Textile and Garment Training",
           description:
-            "Fabric, garments and textile work produced with local skill and modern standards.",
+            "Practical training where students learn garment design, cutting and sewing to modern standards.",
         },
       ],
     },
@@ -296,7 +296,7 @@ export const en: Content = {
     storyTitle: "Our story",
     story: [
       "{{name}} is a multi-sector enterprise built on a simple idea: skills are most valuable when they are put to work. As the enterprise arm of {{college}}, we turn technical knowledge, trained people and workshop capacity into products and services that institutions, organizations and communities can depend on.",
-      "Our work covers a wide range of fields. In manufacturing, we produce home and office furniture in metal, wood and hybrid designs, including doors and windows, as well as wooden parquet flooring, machinery, soap and sanitary materials, cosmetics, and bakery and pastry products. In agriculture-related production, we supply poultry and cattle feed and produce eggs. In construction, we carry out house and building construction, along with the renovation of old houses and buildings. We also provide electrical and electronic technology work, textile and garment production, and the maintenance of electrical and electronic equipment.",
+      "Our work covers a wide range of fields. In manufacturing, we produce home and office furniture in metal, wood and hybrid designs, including doors and windows, as well as wooden parquet flooring, machinery, soap and sanitary materials, cosmetics, and bakery and pastry products. In agriculture-related production, we supply poultry and cattle feed and produce eggs. In construction, we carry out house and building construction, along with the renovation of old houses and buildings. We also provide electrical and electronic technology work and maintain electrical and electronic equipment, and our textile and garment division trains students in garment design, cutting and sewing.",
       "Beyond production, we share what we know. Our research and advisory service and our management and legal consultancy help organizations plan better, operate more efficiently and make informed decisions. Because we are connected to a technical college, we are also committed to quality, job-oriented training that prepares people for real work.",
       "What sets us apart is the combination of cost and quality. We aim to offer products and services that are priced fairly and built to a high standard, and to supply them in sufficient quantity so that our customers are never left waiting. For government institutes, NGOs and communities that need dependable partners, these three things matter most: a reasonable price, consistent quality and a steady supply.",
       "We also believe in local production. By manufacturing goods and delivering services that would otherwise be imported, we aim to strengthen the national economy, keep value within the country and create opportunities for skilled workers. Every product we make and every project we complete is also a chance to apply, test and improve the skills our college teaches.",
@@ -390,7 +390,7 @@ export const en: Content = {
       "{{name}} brings production, construction, technical services and training together under one roof. Explore our divisions below, or contact us to discuss a specific project.",
     divisionsTitle: "Products and services",
     divisionsDescription:
-      "Nine divisions covering manufacturing, construction, electrical work, food production, textiles and more.",
+      "Nine divisions covering manufacturing, construction, electrical work, food production, garment training and more.",
     programsTitle: "Training, research and consultancy",
     programsDescription:
       "Job-oriented training, applied research and advisory support for individuals, institutions and enterprises.",

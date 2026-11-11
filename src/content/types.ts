@@ -30,6 +30,8 @@ export type Division = {
   readonly shortDescription: LocalizedText;
   readonly fullDescription: LocalizedText;
   readonly products: LocalizedList;
+  /** Optional heading for the product/service list, e.g. "What students learn". */
+  readonly productsTitle?: LocalizedText;
   readonly hero: ImageAsset;
   readonly gallery: readonly ImageAsset[];
 };

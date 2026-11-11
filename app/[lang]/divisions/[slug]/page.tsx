@@ -59,15 +59,16 @@ export default async function DivisionPage({ params }: DivisionPageProps) {
   const contactHref = `${localePath(lang, "/contact/")}?division=${division.slug}`;
 
   /**
-   * Non-soap/bakery divisions have a single confirmed photo, which is already
-   * used in the page hero. Showing it again in a gallery would duplicate it,
-   * so the gallery section only appears for soap and bakery, which have
-   * additional distinct photos.
+   * Divisions with a gallery of photos that are distinct from the page hero.
+   * Furniture and construction now have their own gallery sets; soap and
+   * bakery keep their confirmed photos. Other divisions have a single photo,
+   * which is already shown in the hero, so no gallery section is rendered.
    */
-  const galleryImages =
-    division.slug === "soap" || division.slug === "bakery"
-      ? division.gallery
-      : [];
+  const galleryImages = ["soap", "bakery", "furniture", "construction"].includes(
+    division.slug,
+  )
+    ? division.gallery
+    : [];
 
   const allDivisions = getDivisions(lang);
   const currentIndex = allDivisions.findIndex((item) => item.slug === division.slug);
@@ -120,7 +121,7 @@ export default async function DivisionPage({ params }: DivisionPageProps) {
             <div className="lg:col-span-5">
               <div className="rounded-xl border border-primary/10 bg-fourth p-7">
                 <h3 className="text-lg font-semibold text-primary">
-                  {divisionPage.productsTitle}
+                  {division.productsTitle || divisionPage.productsTitle}
                 </h3>
                 <ul className="mt-5 space-y-3">
                   {division.products.map((product) => (

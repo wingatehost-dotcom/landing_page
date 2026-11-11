@@ -19,7 +19,7 @@ const photo = (src: string, alt: string): ImageAsset => ({
   alt,
 });
 
-/** Hero illustration placeholder, 16:9. */
+/** Wide hero photo, 16:9. */
 const hero = (src: string, alt: string): ImageAsset => ({
   src,
   width: 1920,
@@ -27,7 +27,7 @@ const hero = (src: string, alt: string): ImageAsset => ({
   alt,
 });
 
-/** Card / gallery illustration placeholder, 4:3. */
+/** Card / gallery photo, 4:3. */
 const card = (src: string, alt: string): ImageAsset => ({
   src,
   width: 1200,
@@ -71,8 +71,7 @@ export const images = {
 
   /**
    * Division imagery. Keys match `divisionImages` in `src/content/divisions.ts`.
-   * Real photographs are used where they exist; every other slot is a locally
-   * generated, easy-to-replace SVG placeholder.
+   * Every slot uses a real client photograph.
    */
   divisions: {
     furniture: {
@@ -84,8 +83,36 @@ export const images = {
       },
       gallery: [
         card(
-          "/images/divisions/furniture-1.jpg",
-          "Wooden double doors with decorative carved panels",
+          "/images/divisions/furniture-gallery-1.jpg",
+          "Wooden dining chair with a slatted back",
+        ),
+        card(
+          "/images/divisions/furniture-gallery-2.jpg",
+          "Wooden office desk with a matching side cabinet",
+        ),
+        card(
+          "/images/divisions/furniture-gallery-3.jpg",
+          "White and wood office cabinet with drawers",
+        ),
+        card(
+          "/images/divisions/furniture-gallery-4.jpg",
+          "White office desk with a metal frame",
+        ),
+        card(
+          "/images/divisions/furniture-gallery-5.jpg",
+          "Black mesh office chair with a chrome base",
+        ),
+        card(
+          "/images/divisions/furniture-gallery-6.jpg",
+          "White L-shaped office desk",
+        ),
+        card(
+          "/images/divisions/furniture-gallery-7.jpg",
+          "White office desk with an open shelf and drawer",
+        ),
+        card(
+          "/images/divisions/furniture-gallery-8.jpg",
+          "Worker assembling a wooden bed frame in the furniture workshop",
         ),
       ],
     },
@@ -108,8 +135,8 @@ export const images = {
       ),
       gallery: [
         card(
-          "/images/divisions/construction-1.jpg",
-          "Building under construction at the college site",
+          "/images/divisions/construction-cages.jpg",
+          "Metal poultry cages manufactured for the construction and renovation division",
         ),
       ],
     },
@@ -139,13 +166,13 @@ export const images = {
     },
     poultry: {
       hero: photo(
-        "/images/metalwork/poultry-cages.jpg",
-        "Metal poultry cages on display at the college",
+        "/images/divisions/poultry-hero.jpg",
+        "Laying hens in cages inside the college poultry house",
       ),
       gallery: [
         photo(
-          "/images/metalwork/poultry-cages.jpg",
-          "Metal poultry cages on display at the college",
+          "/images/divisions/poultry-hero.jpg",
+          "Laying hens in cages inside the college poultry house",
         ),
       ],
     },

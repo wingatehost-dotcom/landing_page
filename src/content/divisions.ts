@@ -198,18 +198,30 @@ export const divisions: readonly Division[] = [
   },
   {
     slug: "textile",
-    name: { en: "Textile and Garment", am: "ጨርቃጨርቅና ልብስ" },
+    name: { en: "Textile and Garment Training", am: "የጨርቃጨርቅና የልብስ ስልጠና" },
     shortDescription: {
-      en: "Textile and garment work producing clothing and fabric products for institutions and communities.",
-      am: "ለተቋማትና ለማህበረሰቦች ልብስና የጨርቅ ምርቶችን የሚያመርት የጨርቃጨርቅና የልብስ ስራ።",
+      en: "Practical textile and garment training where students learn garment design, cutting and sewing.",
+      am: "ተማሪዎች የልብስ ንድፍ፣ መቁረጥና መስፋትን የሚማሩበት ተግባራዊ የጨርቃጨርቅና የልብስ ስልጠና።",
     },
     fullDescription: {
-      en: "We provide textile and garment work, producing clothing and fabric products to meet the needs of institutions, organizations and communities.",
-      am: "የጨርቃጨርቅና የልብስ ስራ እናቀርባለን፤ የተቋማትን፣ የድርጅቶችንና የማህበረሰቦችን ፍላጎት የሚያሟሉ ልብሶችንና የጨርቅ ምርቶችን በማምረት።",
+      en: "This is a teaching division. We train students in textile and garment work ,garment design, pattern making, cutting, sewing and finishing so that they leave with the practical skills employers in the garment industry need. The focus is on teaching the trade.",
+      am: "ይህ የማስተማሪያ ክፍል ነው። ተማሪዎችን በጨርቃጨርቅና በልብስ ስራ የልብስ ንድፍ ዲዛይን፣ ፓተርን ማዘጋጀት፣ መቁረጥ፣ መስፋትና ማጠናቀቅ እናሰለጥናለን፤ ተማሪዎች በልብስ ኢንዱስትሪው የሚፈለጉትን ተግባራዊ ክህሎቶች ይዘው እንዲወጡ እናስችላለን።",
     },
     products: {
-      en: ["Garment production", "Textile work", "Uniforms and institutional orders"],
-      am: ["የልብስ ስፌት ምርት", "የጨርቃጨርቅ ስራ", "የዩኒፎርምና የተቋማዊ ትዕዛዞች"],
+      en: [
+        "Garment design and pattern making",
+        "Cutting, sewing and finishing practice",
+        "Workshop-based training for students",
+      ],
+      am: [
+        "የልብስ ንድፍና ፓተርን ማዘጋጀት",
+        "የመቁረጥ፣ የመስፋትና የማጠናቀቅ ልምምድ",
+        "ለተማሪዎች በወርክሾፕ የተመሰረተ ስልጠና",
+      ],
+    },
+    productsTitle: {
+      en: "What students learn",
+      am: "ተማሪዎች የሚማሩት",
     },
     hero: images.divisions.textile.hero,
     gallery: images.divisions.textile.gallery,

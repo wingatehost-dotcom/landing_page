@@ -45,16 +45,16 @@ Everything below is still needed from the client before launch. Items marked **[
 
 Real client photos are now used for bakery, soap, metalwork, furniture, parquet, construction, machinery, electrical and textile. The following still need photos.
 
-- [x] Furniture, doors and windows — hero + 2 gallery photos
-- [x] Wooden parquet flooring — hero + 2 gallery photos
-- [x] Construction and renovation — hero + 2 gallery photos
-- [x] Machinery manufacturing — hero + 2 gallery photos
-- [x] Electrical and electronic technology — hero + 2 gallery photos
-- [x] Poultry — 2 gallery photos (the poultry cage photos are real)
+- [x] Furniture, doors and windows — hero + 8 gallery photos from the new furniture gallery set
+- [x] Wooden parquet flooring — hero + 1 gallery photo
+- [x] Construction and renovation — hero + metal poultry-cage gallery photo
+- [x] Machinery manufacturing — hero + 1 gallery photo
+- [x] Electrical and electronic technology — hero + 1 gallery photo
+- [x] Poultry and egg production — new poultry farm photo used as hero and gallery
 - [ ] Poultry and cattle feed — production photos
 - [ ] Bakery and pastry — optional additional production photos
 - [ ] Soap and cosmetics — optional additional production photos
-- [x] Textile and garment — hero + 2 gallery photos
+- [x] Textile and garment training — hero + 1 gallery photo
 - [ ] Training / students / workshop — additional photos welcome
 - [ ] Team portraits (only if the team section should be shown)
 - [ ] Partner logos (only if a partners strip should be shown)
